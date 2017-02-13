@@ -9,11 +9,18 @@
 }
 
 .person{
-    height: 100px;
+    hheight: 100px;
 }
 .person img {
-    width: 100%;
+    width: 250px;
     height: 250px;
+    object-fit: cover;
+    box-shadow: 0 0 8px black;
+    border-radius: 50%;
+}
+.person td{
+    padding: 10px;
+    border: 1px solid black;
 }
 /* The side navigation menu */
 .sidenav {
