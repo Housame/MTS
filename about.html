@@ -2,31 +2,53 @@
 <html lang="en">
 <head>
     <link href="css/styles.css" rel="stylesheet">
+    <script src="js/main.js"></script>
+    <script src="js/jquery-3.1.1.js"></script>
     <meta charset="UTF-8">
     <title>About</title>
 </head>
 <body>
 <div class="header"></div>
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html">About</a>
+    <a href="games.html">Games</a>
+</div>
+<!-- Use any element to open the sidenav -->
+<span onclick="openNav()">open</span>
 <div class="main-content">
     <div class="person" id="housame">
-    <table>
-        <tr>
-        <td>Imagecell</td> <td>Name and about</td>
-        </tr>
-    </table>
+        <table>
+            <tr>
+                <td rowspan="2"><img src=""></td>
+                <td><h2>Housame</h2>
+                    <p>H balalalalasldjd djdjjd sjowehqe  kdkddhdds </p>
+                </td>
+            </tr>
+            <tr><td>
+                <ul><li>Github:</li><li>LinkedIn:</li></ul>
+            </td></tr>
+        </table>
     </div>
     <div class="person" id="mauricio">
         <table>
             <tr>
-                <td>Imagecell</td> <td>Name and about</td>
+                <td rowspan="2"><img src=""></td>
+                <td><h2>Mauricio</h2>
+                    <p>M balalalalasldjd djdjjd sjowehqe  kdkddhdds </p>
+                </td>
             </tr>
+            <tr><td>
+                <ul><li>Github:</li><li>LinkedIn:</li></ul>
+            </td></tr>
         </table>
     </div>
     <div class="person" id="tommy">
         <table>
             <tr>
                 <td rowspan="2"><img src="img/tommy.jpg"></td>
-                <td><h4>Tommy Forsberg</h4>
+                <td><h2>Tommy Forsberg</h2>
                 <p>Tommy balalalalasldjd djdjjd sjowehqe  kdkddhdds </p>
                 </td>
             </tr>
@@ -37,10 +59,6 @@
     </div>
 
 </div>
-
-
-
-
 
 
 <div class="footer"></div>
