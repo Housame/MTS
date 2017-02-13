@@ -22,6 +22,10 @@
     padding: 10px;
     border: 1px solid black;
 }
+.menu-icon{
+    float:right;
+    width:100px;
+}
 /* The side navigation menu */
 .sidenav {
     height: 100%; /* 100% Full-height */
