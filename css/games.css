@@ -9,14 +9,17 @@ table tr, td
 }
 .games-row
 {
-    margin: 0 auto;
-    width: 1000px;
+    margin: 0;
+    width: 100%;
 }
 .game-table
 {
-    width: 500px;
+    width: 50%;
     float: left;
-    margin-top: 100px;
+    margin-top: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
 }
 .game-table img
 {
@@ -47,4 +50,34 @@ table tr, td
     width: 60px;
     height: 60px;
     border: 2px solid darkred;
+}
+.left-bar
+{
+    border: 2px solid black;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    width: 16%;
+    overflow: hidden;
+    height: 800px;
+}
+.main-bar
+{
+    border: 2px solid black;
+    float: left;
+    width: 84%;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+.smallCell
+{
+    width: 50%;
+    margin: 0px;
+    padding: 0px;
+    vertical-align: top;
+}
+.textBox
+{
+    margin: 0 20px;
 }
