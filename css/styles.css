@@ -11,10 +11,20 @@ body
     left:0;
     right: 0;
     top: 0;
-}
 
+}
+#housame,#tommy{
+    background-color: black;
+    color: white;
+}
 .person{
-    font-size: 24px;
+    font-size: 20px;
+    width: 100%;
+}
+.person table
+{
+    width: 80%;
+    margin: 0 auto;
 }
 .person img {
     width: 250px;
@@ -67,8 +77,9 @@ body
 }
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 .main-content {
-    transition: margin-left .5s;
-    padding: 20px;
+    ttransition: margin-left .5s;
+    width: 100%;
+    margin: 0 auto;
 }
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
