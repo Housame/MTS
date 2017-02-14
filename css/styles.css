@@ -37,6 +37,11 @@ body
     padding: 10px;
     border: 1px solid black;
 }
+
+.socialMedia img{
+    height: 50px;
+    width: 50px;
+}
 .menu-icon{
     float:right;
     width:100px;

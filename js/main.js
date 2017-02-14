@@ -20,7 +20,10 @@
             href: 'Dropbox-Logo.jpg',
                 web: '"https://github.com/"'
         },{
-            href: 'logo_facebook.png',
+            href: 'YouTube_Play.png',
+            web: '"http/youtube.com"'
+            },{
+            href: 'facebook-icon.png',
                 web: '"https://github.com/"'
         },{
             href: 'linkedin-icon.png',
