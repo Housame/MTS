@@ -1,0 +1,50 @@
+.main-content
+{
+    width: 100%;
+}
+table tr, td
+{
+    margin: 0;
+    padding: 0;
+}
+.games-row
+{
+    margin: 0 auto;
+    width: 1000px;
+}
+.game-table
+{
+    width: 500px;
+    float: left;
+    margin-top: 100px;
+}
+.game-table img
+{
+    width: 200px;
+    height: 200px;
+}
+.cell-2
+{
+    vertical-align: top;
+    padding-left: 25px;
+}
+.text-table h3 /* Title */
+{
+    margin: 0;
+    padding: 0;
+}
+.text-table p /* Subtitle */
+{
+    margin: 0;
+    padding: 0;
+}
+.icon /* Icons */
+{
+    color: white;
+    text-align: center;
+    line-height: 60px;
+    background-color: palevioletred;
+    width: 60px;
+    height: 60px;
+    border: 2px solid darkred;
+}
