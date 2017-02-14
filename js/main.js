@@ -14,18 +14,24 @@
 
  function insertLogos(){
         var socialMediaLogos = [
-            {href: 'GitHub-Mark.png'
+            {href: 'GitHub-Mark.png',
+                web: '"https://github.com/"'
         },{
-            href: 'Dropbox-Logo.jpg'
+            href: 'Dropbox-Logo.jpg',
+                web: '"https://github.com/"'
         },{
-            href: 'facebook-icon.png'
+            href: 'logo_facebook.png',
+                web: '"https://github.com/"'
         },{
-            href: 'linkedin-icon.png'
+            href: 'linkedin-icon.png',
+                web: '"https://github.com/"'
         },{
-            href: 'twitter-logo-final.png'
+            href: 'twitter-logo-final.png',
+                web: '"https://github.com/"'
             }];
         var catalog = 'img/social-media-logos/';
         for(var i=0; i < socialMediaLogos.length; i++){
-            $('.socialMedia').append('<li><img src=' + catalog + socialMediaLogos[i].href+'></img></li>');
+            $('.socialMedia').append('<td><a href =' +socialMediaLogos[i].web + '><img src=' + catalog + socialMediaLogos[i].href+'></img></a></td>');
         }
  }
+
