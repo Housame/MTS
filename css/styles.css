@@ -1,3 +1,8 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
 .header{
     position: fixed;
     background-color: #a3f8ff;
@@ -32,7 +37,7 @@
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
-    top: 1%;
+    top: 0;
     right: 0;
     background-color: #111; /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
