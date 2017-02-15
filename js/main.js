@@ -37,7 +37,7 @@
             }];
         var catalog = 'img/social-media-logos/';
         for(var i=0; i < socialMediaLogos.length; i++){
-            $('.socialMedia').append('<td><a href =' +socialMediaLogos[i].web + '><img src=' + catalog + socialMediaLogos[i].href+'></img></a></td>');
+            $('.socialMedia').append('<td><a target="_blank" href =' +socialMediaLogos[i].web + '><img src=' + catalog + socialMediaLogos[i].href+'></img></a></td>');
         }
  }
 
