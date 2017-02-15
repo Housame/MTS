@@ -18,19 +18,22 @@
                 web: '"https://github.com/"'
         },{
             href: 'Dropbox-Logo.jpg',
-                web: '"https://github.com/"'
+                web: '"https://dropbox.com/"'
         },{
             href: 'YouTube_Play.png',
             web: '"http/youtube.com"'
             },{
             href: 'facebook-icon.png',
-                web: '"https://github.com/"'
+                web: '"https://facebook.com/"'
         },{
             href: 'linkedin-icon.png',
-                web: '"https://github.com/"'
+                web: '"https://linkedin.com/"'
         },{
+            href: 'insta.jpeg',
+                web: '"http://instagram.com"'
+            },{
             href: 'twitter-logo-final.png',
-                web: '"https://github.com/"'
+                web: '"https://twitter.com/"'
             }];
         var catalog = 'img/social-media-logos/';
         for(var i=0; i < socialMediaLogos.length; i++){
