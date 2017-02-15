@@ -11,6 +11,7 @@ body
     left:0;
     right: 0;
     top: 0;
+    margin-bottom: 40px;
 
 }
 #coverUp {
@@ -101,6 +102,7 @@ body
     transition: margin-left 0.5s;
     width: 100%;
     margin: 0 auto;
+    margin-bottom: 1%;
 }
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {

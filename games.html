@@ -9,8 +9,10 @@
     <script src="js/main.js"></script>
     <script src="js/jquery-3.1.1.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
 </head>
-<body>
+<body ng-app="myApp">
 
     <!-- Header -->
     <<div class="header">
@@ -33,129 +35,22 @@
     <div class="main-content">
 
         <div class="left-bar">
+            <br><br><br><br><br>
+
+            <button onclick="window.location.href='#/'">Main</button><br>
+            <button onclick="window.location.href='#/sten'">Sten Sax Påse</button>
+
         </div>
 
         <div class="main-bar">
-
-            <div class="game-row">
-
-                <!-- Game 1 -->
-                <div class="game-table">
-                    <table>
-                        <tr>
-                            <!-- Cell 1: Image -->
-                            <td class="smallCell"><img src="img/placeholder.png"></td>
-                            <!-- Cell 2: Text & info -->
-                            <td class="smallCell">
-                                <table class="textBox">
-                                    <tr><td>Title</td></tr>
-                                    <tr><td>Subtitle</td></tr>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>2</td>
-                                        <td>3</td>
-                                    </tr>
-                                    <tr>
-                                        <td><button type="button">Launch</button></td>
-                                    </tr>
-                                </table>
-                            </td>
-                    </table>
-                </div>
-
-                <!-- Game 2 -->
-                <div class="game-table">
-                    <table>
-                        <tr>
-                            <!-- Cell 1: Image -->
-                            <td class="smallCell"><img src="img/placeholder.png"></td>
-                            <!-- Cell 2: Text & info -->
-                            <td class="smallCell">
-                                <table>
-                                    <tr><td>Title</td></tr>
-                                    <tr><td>Subtitle</td></tr>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>2</td>
-                                        <td>3</td>
-                                    </tr>
-                                    <tr>
-                                        <td><button type="button">Launch</button></td>
-                                    </tr>
-                                </table>
-                            </td>
-                    </table>
-                </div>
+            <div ng-view></div>
         </div>
 
-            <div class="game-row">
-
-                <!-- Game 3 -->
-                <div class="game-table">
-                    <table>
-                        <tr>
-                            <!-- Cell 1: Image -->
-                            <td class="smallCell"><img src="img/placeholder.png"></td>
-                            <!-- Cell 2: Text & info -->
-                            <td class="smallCell">
-                                <table class="textBox">
-                                    <tr><td>Title</td></tr>
-                                    <tr><td>Subtitle</td></tr>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>2</td>
-                                        <td>3</td>
-                                    </tr>
-                                    <tr>
-                                        <td><button type="button">Launch</button></td>
-                                    </tr>
-                                </table>
-                            </td>
-                    </table>
-                </div>
-
-                <!-- Game 4 -->
-                <div class="game-table">
-                    <table>
-                        <tr>
-                            <!-- Cell 1: Image -->
-                            <td class="smallCell"><img src="img/placeholder.png"></td>
-                            <!-- Cell 2: Text & info -->
-                            <td class="smallCell">
-                                <table>
-                                    <tr><td>Title</td></tr>
-                                    <tr><td>Subtitle</td></tr>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>2</td>
-                                        <td>3</td>
-                                    </tr>
-                                    <tr>
-                                        <td><button type="button">Launch</button></td>
-                                    </tr>
-                                </table>
-                            </td>
-                    </table>
-                </div>
-        </div>
 
     </div>
-
-
-
-    <div class="main-content">
-
-        <div class="games-row">
-
-        </div>
-
-        <div class="games-row">
-
-    </div>
-
     <!-- Footer -->
     <div class="footer">
     </div>
-
+    <script src="js/angular-mod.js"></script>
 </body>
 </html>
