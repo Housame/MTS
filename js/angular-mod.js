@@ -10,5 +10,8 @@ app.config(function($routeProvider) {
         .when("/sten", {
             templateUrl : "ng-parts/RPS-game.html"
         })
+        .when("/memory", {
+            templateUrl : "ng-parts/Memory/memory-game.html"
+        })
 
 });
