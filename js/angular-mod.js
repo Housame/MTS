@@ -11,7 +11,7 @@ app.config(function($routeProvider) {
             templateUrl : "ng-parts/RPS-game.html"
         })
         .when("/memory", {
-            templateUrl : "ng-parts/Memory/memory-game.html"
+            templateUrl : "ng-parts/memory-game.html"
         })
 
 });
