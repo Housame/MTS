@@ -22,7 +22,7 @@
                 web: '"https://dropbox.com/"'
         },{
             href: 'YouTube_Play.png',
-            web: '"http/youtube.com"'
+            web: '"http://youtube.com"'
             },{
             href: 'facebook-icon.png',
                 web: '"https://facebook.com/"'

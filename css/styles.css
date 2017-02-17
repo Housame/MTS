@@ -56,7 +56,6 @@ video.video-container{
     cclip: rect(40px, 30px, 150px, 0px);
     border: 1px solid black;
     mmargin: -90px -120px 200px -10px;
-
     object-fit: cover;
 }
 .tableLink{
@@ -64,7 +63,7 @@ video.video-container{
 }
 #coverUp {
     background-image: url("../img/4.jpg");
-    height: 300px;
+    height: 285px;
     background-size: cover;
 }
 
@@ -75,15 +74,17 @@ video.video-container{
 }
 #coverUp span{
     background-color: #a3f8ff ;
-
 }
+
 
 #housame,#tommy{
     background-color: black;
     color: white;
+
 }
 .person{
-    font-size: 20px;
+
+    font-size: 18px;
     width: 100%;
 }
 .person table
@@ -99,7 +100,8 @@ video.video-container{
     border-radius: 50%;
 }
 .person td{
-    padding: 10px;
+
+    padding-left: 20px;
     border: 1px solid black;
 }
 
