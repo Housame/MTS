@@ -43,14 +43,10 @@ video.video-container{
 
 
 #headerTable {
-
     width:100%;
-
 }
 #headerTable td{
     vertical-align: top;
-
-
 }
 #headerTable img{
     hheight: 250px;
@@ -79,6 +75,8 @@ video.video-container{
 #housame,#tommy{
     background-color: black;
     color: white;
+}
+#mauricio{
 
 }
 .person{
@@ -101,7 +99,7 @@ video.video-container{
 .person td{
 
     padding-left: 20px;
-    border: 1px solid black;
+    bborder: 1px solid black;
 }
 
 .socialMedia img{
