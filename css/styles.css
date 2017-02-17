@@ -23,19 +23,20 @@ video.video-container{
     left:0;
     right: 0;
     top: 0;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
     vertical-align: top;
 }
 .filter {
     z-index: 1;
     position: fixed;
+    bbackground: linear-gradient(to bottom, rgba(0,0,0,0.3),rgba(0,0,0,0.2), rgba(0,0,0,0.0));
     background-color: black;
     width: 100%;
     left:0;
     right: 0;
     top: 0;
     opacity: 0.1;
-    padding: 40px;
+    padding: 30px;
 }
 
 
