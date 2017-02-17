@@ -20,11 +20,20 @@ video#video-container{
     right: 0;
     top: 0;
     margin-bottom: 40px;
-
+    vertical-align: top;
 }
 #headerTable{
    
     width:100%;
+}
+#headerTable td{
+    vertical-align: top;
+
+}
+#headerTable img{
+    vertical-align: top;
+    height: 50px;
+    object-fit: cover;
 }
 #coverUp {
     background-image: url("../img/4.jpg");
