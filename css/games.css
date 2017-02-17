@@ -50,18 +50,31 @@ table tr, td
 }
 .left-bar
 {
-    border: 2px solid black;
-    margin: 0px;
-    padding: 0px;
+    margin-top: 50px;
+    border-right: 2px solid lightgrey;
     float: left;
     width: 16%;
     overflow: hidden;
-    height: 800px;
+    height: 600px;
+}
+.left-bar img
+{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 1px solid darkblue;
+    margin: 0 10px;
+}
+.left-bar-game
+{
+    background-color: lightblue;
+    border-bottom: 5px solid cadetblue;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .main-bar
 {
     height: 100%;
-    border: 2px solid black;
     float: left;
     width: 84%;
     margin: 0px;
@@ -70,6 +83,7 @@ table tr, td
 }
 .smallCell
 {
+    border: 1px solid black;
     width: 50%;
     margin: 0px;
     padding: 0px;
@@ -78,6 +92,10 @@ table tr, td
 .textBox
 {
     margin: 0 20px;
+}
+.textBox tr
+{
+    width: 100%;
 }
 .stenDesign{
     align-content: center;
