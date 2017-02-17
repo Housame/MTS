@@ -9,10 +9,10 @@ function Game(choice){
     var userChoice = choice;
     var computerChoice = Math.random();
     if(computerChoice<0.34)
-        computerChoice="Sten";
+        computerChoice="Rock";
     else if (computerChoice<=0.67)
-        computerChoice="Sax";
-    else computerChoice="Påse";
+        computerChoice="Scissor";
+    else computerChoice="Paper";
 
     var firstString = "Ditt val: "+userChoice;
     var secondString="CPU val: "+computerChoice;
@@ -29,21 +29,21 @@ function compare(choice1,choice2) {
     choice2=choice2.toUpperCase();
     if(choice1==choice2)
         return "withdraw!";
-    else if (choice1=="PÅSE")
+    else if (choice1=="PAPER")
     {
-        if(choice2=="STEN")
-            return "Du vinner!";
-        else return"Du förlorar, CPU vinner!"
+        if(choice2=="ROCK")
+            return "You WIN!";
+        else return"You LOSE, CPU WIN!"
     }
-    else if (choice1=="STEN")
+    else if (choice1=="ROCK")
     {
-        if(choice2=="SAX")
-            return "Du vinner!";
-        else return"Du förlorar, CPU vinner!"
+        if(choice2=="SCISSOR")
+            return "You WIN!";
+        else return"You LOSE, CPU WIN!"
     }
-    else if (choice1=="SAX")
+    else if (choice1=="SCISSOR")
     {
-        if(choice2=="STEN")
+        if(choice2=="PAPER")
             return "Du vinner!";
         else return"Du förlorar, CPU vinner!"
     }
