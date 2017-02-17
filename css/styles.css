@@ -31,9 +31,8 @@ video#video-container{
 
 }
 #headerTable img{
-    vertical-align: top;
-    height: 50px;
-    object-fit: cover;
+    height: 250px;
+    margin: -90px 0 -50px 0;
 }
 #coverUp {
     background-image: url("../img/4.jpg");
