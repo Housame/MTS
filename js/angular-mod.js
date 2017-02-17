@@ -13,5 +13,9 @@ app.config(function($routeProvider) {
         .when("/memory", {
             templateUrl : "ng-parts/memory-game.html"
         })
+        .otherwise({
+            redirectTo: '/',
+            templateUrl: "ng-parts/main.html"
+        })
 
 });

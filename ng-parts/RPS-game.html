@@ -1,8 +1,21 @@
 <section>
 
-    <div class="stenDesign">
-    <div> <button onclick="StartGame()">Start Game</button></div>
-    <div id="gameBoxx" class="game-box" ></div>
+    <div id="RPSField" class="stenDesign">
+        <div> <button  ng-click="qty = 1">Start Game</button><br>
+            <h2>Choose Paper, Rock or Scissor by clicking it!</h2></div>
+        <div id="gameBoxx" class="game-box" class="block-border fade" ng-show="qty > 0">
+            <img src ="img/RPS-map.png" width="300" height="300" alt="RPSMap" usemap="#RPS-map">
+            <map name="RPS-map">
+                <area shape="circle" coords="76,80,67" href="#" alt="Rock1" onclick="StartGame('sten');return false;" >
+                <area shape="circle" coords="118,223,74" href="#" alt="Scissor1"  onclick="StartGame('sax');return false;" >
+                <area shape="circle" coords="222,123,74" href="#" alt="Paper1"  onclick="StartGame('påse');return false;">
+            </map> </div>
     </div>
+    <script>
+        var app = angular.module('myApp', ['ngAnimate']);
+
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
+    <script src="js/jquery-3.1.1.js"></script>
     <script src="js/stensax.js"></script>
 </section>

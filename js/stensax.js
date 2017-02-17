@@ -1,12 +1,12 @@
 /**
  * Created by Housam on 2017-02-15.
  */
-function StartGame() {
+function StartGame(choice){
     document.getElementById("gameBoxx").innerHTML = "";
-    Game();
+    Game(choice);
 }
-function Game(){
-    var userChoice = window.prompt("Ditt val: Sten, Sax eller Påse!");
+function Game(choice){
+    var userChoice = choice;
     var computerChoice = Math.random();
     if(computerChoice<0.34)
         computerChoice="Sten";
@@ -20,7 +20,8 @@ function Game(){
 
     var x = document.createElement("p");
     gameBoxx.appendChild(x);
-    x.innerHTML = firstString+"<br>"+secondString+"<br>"+result;
+
+    x.innerHTML = firstString+"<br>"+secondString+"<br>"+result+"<br> <div> <button onclick='Reset()'>Reset Game</button>";
 
 }
 function compare(choice1,choice2) {
@@ -46,4 +47,9 @@ function compare(choice1,choice2) {
             return "Du vinner!";
         else return"Du förlorar, CPU vinner!"
     }
+}
+
+function Reset(){
+    window.location.href="#/";
+    window.location.href="#/sten";
 }
