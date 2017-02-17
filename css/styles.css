@@ -59,9 +59,7 @@ video.video-container{
     mmargin: -90px -120px 200px -10px;
     object-fit: cover;
 }
-.tableLink{
-    height: 100px;
-}
+
 #coverUp {
     background-image: url("../img/4.jpg");
     height: 285px;
@@ -161,6 +159,7 @@ video.video-container{
     text-align: center;
     font-size: 50px;
     color: black;
+    background-color: #a3f8ff;
 }
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
