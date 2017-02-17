@@ -27,6 +27,7 @@ video.video-container{
     vertical-align: top;
 }
 .filter {
+    z-index: 1;
     position: fixed;
     background-color: black;
     width: 100%;
@@ -36,17 +37,29 @@ video.video-container{
     opacity: 0.1;
     padding: 40px;
 }
-#headerTable{
-   
+
+
+
+#headerTable {
+
     width:100%;
+
 }
 #headerTable td{
     vertical-align: top;
 
+
 }
 #headerTable img{
-    height: 250px;
-    margin: -90px 0 -50px 0;
+    hheight: 250px;
+    cclip: rect(40px, 30px, 150px, 0px);
+    border: 1px solid black;
+    mmargin: -90px -120px 200px -10px;
+
+    object-fit: cover;
+}
+.tableLink{
+    height: 100px;
 }
 #coverUp {
     background-image: url("../img/4.jpg");
