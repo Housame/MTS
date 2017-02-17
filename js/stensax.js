@@ -14,8 +14,8 @@ function Game(choice){
         computerChoice="Scissor";
     else computerChoice="Paper";
 
-    var firstString = "Ditt val: "+userChoice;
-    var secondString="CPU val: "+computerChoice;
+    var firstString = "You Choice: "+userChoice;
+    var secondString="CPU Choice: "+computerChoice;
     var result = compare(userChoice,computerChoice);
 
     var x = document.createElement("p");
