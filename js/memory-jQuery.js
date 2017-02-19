@@ -25,6 +25,7 @@ $(document).ready(function() {
                 break;
             case 2: card2 = cardid;
                 card2Class = cardclass;
+                //Check if cards match
                 if(card1Class==card2Class && card1 != card2){
                     cards[findCardInArray(card1)].turned=true;
                     clicks=0;
@@ -48,7 +49,7 @@ $(document).ready(function() {
             }
         }
     });
-
+//Resize card
     $('.card').mouseenter(function () {
         $(this).animate({
             width: '+=5px', height: '+=5px',
@@ -56,6 +57,7 @@ $(document).ready(function() {
             "margin-top": '-=5px'
         });
     });
+    //Resize card
     $('.card').mouseleave(function () {
         $(this).animate({
             width: '-=5px', height: '-=5px',
@@ -64,6 +66,7 @@ $(document).ready(function() {
         });
     });
 
+    //Finds index of single card in array
     function findCardInArray(titel){
         var sliceNumber = titel.slice(0,-1);
         for(i = 0; i <= cards.length; i++){
@@ -114,13 +117,13 @@ function randomizeArray(){
         cards[secondRandom] = selectedElement;
     }
 }
+//Initializes gamefield with all cards in the card-array.
 function printAllCards() {
-    //document.getElementById("gameField").innerHTML = "";
     for(x=0;x < 2; x++){
         randomizeArray();
         for (i = 0; i < cards.length; i++) {
             var newDiv = document.createElement("div");
-            newDiv.id = cards[i].motif+x;
+            newDiv.id = cards[i].motif+x; //Generates ID according to for-loop.
             newDiv.className = 'card ' + cards[i].motif;
             document.getElementById("gameField").appendChild(newDiv);
         }
