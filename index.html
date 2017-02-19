@@ -5,12 +5,14 @@
     <title>Tower</title>
     <link rel="icon" href="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSCtiRtoiDWFbyu6JaC0Jnrpa3ybiyyBGYekSOGbRdo6_lJsgaRdw">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="css/datetime.css" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="js/main.js"></script>
+    <script src="js/datetime.js"></script>
     <script src="js/jquery-3.1.1.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body onload="displayTime(), displayDate();">
 <video autoplay loop poster="img/background-ice.bmp" class="video-container" id="video-index">
     <source src="video/background-ice.webm" type="video/webm">
     <source src="video/background-ice.mp4" type="video/mp4">
@@ -35,6 +37,11 @@
     </div>
 </div>
 <div class="main-content">
+    <div id ="datetime">
+        <p id="time"></p>
+        <p id="date"></p>
+
+    </div>
     <div class="slogan">Building towers since 1173</div>
 
 </div>

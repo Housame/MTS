@@ -1,0 +1,25 @@
+#datetime
+{
+    margin-top: 60px;
+    text-align: center;
+}
+#time, #date
+{
+    display: inline-block;
+    font-size: 40px;
+    font-weight: bold;
+    width: fit-content;
+    padding: 10px 35px;
+    border: 5px solid black;
+    border-radius: 5px;
+}
+#time
+{
+    background-color: lightgrey;
+    color: red;
+}
+#date
+{
+    background-color: red;
+    color: lightgrey;
+}
