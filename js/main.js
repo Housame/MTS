@@ -46,11 +46,12 @@
     $(document).ready(function () {
 
         $('#left-bar').hide();
+        $('#bottom').hide();
 
         $('.game-row button').click(function() {
             $('#right-bar').slideUp('slow');
             $('#left-bar').delay('slow').slideDown('slow');
-            $('#bottom').delay('slow').width(1000);
+            $('#bottom').slideDown('slow').width(1000);
         });
 
         $('#mainBtn').click(function() {
@@ -58,7 +59,10 @@
             $('#right-bar').delay('slow').animate({
                 width: '100%'
             }, 0)
-            $('#right-bar').slideDown('slow');
+            $('#right-bar').slideDown('slow', function ()
+            {
+                $('#bottom').delay().hide();
+            });
         });
 
     });
