@@ -1,0 +1,36 @@
+body
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.tile
+{
+    padding: 50px;
+    background-image: url('../img/tictactoe/earth.png');
+}
+.tile img
+{
+    height: 100px;
+    width: 100px;
+}
+.playerTile
+{
+    border: 2px solid blue;
+}
+.cpuTile
+{
+    border: 2px solid red;
+}
+#turnMsg
+{
+    font-weight: bold;
+    font-size: 20px;
+    color: darkred;
+}
+#resultMsg
+{
+    font-weight: bold;
+    font-size: 30px;
+    color: green;
+}
