@@ -1,3 +1,4 @@
+// Global variables
 var tileIsOccupied;
 var cpuChoice;
 var gameTurn;
@@ -9,8 +10,10 @@ var winner = false;
 
 $(document).ready(function () {
 
+    // Creates grid when page has finished loading
     createGrid();
 
+    // Function executed whenever you click a 'tile'/or any button inside the grid
     $('#grid button').click(function () {
         $(this).fadeOut('fast', function () {
             $(this).css("background-image", "url(img/tictactoe/usa.jpg)").fadeIn();
@@ -19,6 +22,7 @@ $(document).ready(function () {
         $(this).addClass('playerTile');
         $(this).prop('disabled', true);
 
+        // After player has finished his turn: increase turn counter
         ++gameTurn;
         turnCounter();
         tileIsOccupied = true;
@@ -26,12 +30,14 @@ $(document).ready(function () {
 
         checkForWinner();
 
+        // Disable the rest of the buttons if a winner is declared
         if (winner == true)
         {
             $('#grid button').prop('disabled', true);
             return;
         }
 
+        // CPU move
         do
         {
 
@@ -60,6 +66,7 @@ $(document).ready(function () {
 
         } while (tileIsOccupied);
 
+        // Check for winner and if true disable the rest of the buttons
         checkForWinner();
         if (winner == true)
         {
@@ -70,6 +77,7 @@ $(document).ready(function () {
 
     });
 
+    // The conditions required to win the game
     function checkForWinner()
     {
         for (var i = 1; i < 4; i++)
@@ -104,6 +112,7 @@ $(document).ready(function () {
             declareWinner('Game was a draw.');
     }
 
+    // Function that resets classes and variables upon clicking the new game button
     $('.newGameBtn').click(function() {
         $('#grid button').each(function() {
             $(this).removeClass('playerTile').removeClass('cpuTile').removeClass('occupiedTile').css('background-image', 'none').prop('disabled', false);
@@ -118,6 +127,7 @@ $(document).ready(function () {
 
 });
 
+// Create grid function
 function createGrid() {
 
     var table = document.createElement('table');
@@ -149,11 +159,13 @@ function createGrid() {
     innerDiv.appendChild(table);
 }
 
+// Print turn/round to the game window
 function turnCounter()
 {
     turnMsg.innerHTML = "Turn: " + gameTurn.toString();
 }
 
+// Print message on the game window if a winner or a draw is declared
 function declareWinner(result)
 {
     winner = true;
