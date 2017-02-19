@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/games.css" type="text/css">
     <link href="css/memory.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="js/main.js"></script>
+
     <script src="js/jquery-3.1.1.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
@@ -32,41 +32,112 @@
             <a href="games.html">Games</a>
         </div>
     </div>
+<div id="container">
 
-    <!-- Main content -->
+    <!-- Top -->
+    <div id="top-bar">
+        <button id="mainBtn">Main</button>
+    </div>
 
-    <div class="main-content">
+    <!-- Left -->
+    <div id="left-bar">
+        <a href="javascript:" onclick="window.location.href='#/memory'">
+            <img src="img/logo-memory.jpg">
+        </a><br>
+        <a href="javascript:" onclick="window.location.href='#/sten'">
+            <img src="img/logo-rps.jpg">
+        </a><br>
+        <a href="javascript:" onclick="window.location.href='#/tictactoe'">
+            <img src="img/logo-tictactoe.png">
+        </a><br>
+    </div>
 
-        <div class="left-bar">
-            
-            <button id="mainBtn" onclick="window.location.href='#/'">Main</button>
+    <!-- Right -->
+    <div id="right-bar">
 
-            <div class="left-bar-game">
-                <img src="img/RSP-logo.jpg">
-                <button onclick="window.location.href='#/sten'">Sten Sax Påse</button><br>
+        <!-- Rock Paper Scissor -->
+        <div class="game-row">
+            <!-- Image -->
+            <div id="imgDiv">
+                <img src="img/logo-rps.jpg">
             </div>
-
-            <div class="left-bar-game">
-                <img src="img/memorylogo.jpg">
-                <button onclick="window.location.href='#/memory'">Memory</button>
+            <!-- Title & Subtitle -->
+            <div>
+                <h1>Sten Sax Påse</h1>
+                <p>
+                    The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.
+                </p>
             </div>
-            
-            <div class="left-bar-game">
-                <img src="img/memorylogo.jpg">
-                <button onclick="window.location.href='#/memory'">Damien's Game</button>
+            <!-- Icons and launch button -->
+            <div>
+                <ul class="icons">
+                    <li>A</li>
+                    <li>10</li>
+                    <li>i</li>
+                </ul>
+                <button class="launchBtn" onclick="window.location.href='#/sten'">Launch Game</button>
             </div>
-
         </div>
 
-        <div class="main-bar">
-            <div ng-view></div>
+        <!-- Memory -->
+        <div class="game-row">
+            <!-- Image -->
+            <div id="imgDiv">
+                <img src="img/logo-memory.jpg">
+            </div>
+            <!-- Title & Subtitle -->
+            <div>
+                <h1>Memory</h1>
+                <p>
+                    The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.
+                </p>
+            </div>
+            <!-- Icons and launch button -->
+            <div>
+                <ul class="icons">
+                    <li>B</li>
+                    <li>7</li>
+                    <li>i</li>
+                </ul>
+                <button class="launchBtn" onclick="window.location.href='#/memory'">Launch Game</button>
+            </div>
         </div>
 
+        <!-- Tic Tac Toe -->
+        <div class="game-row">
+            <!-- Image -->
+            <div id="imgDiv">
+                <img src="img/logo-tictactoe.png">
+            </div>
+            <!-- Title & Subtitle -->
+            <div>
+                <h1>Tic Tac Toe</h1>
+                <p>
+                    The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.
+                </p>
+            </div>
+            <!-- Icons and launch button -->
+            <div>
+                <ul class="icons">
+                    <li>C</li>
+                    <li>12</li>
+                    <li>i</li>
+                </ul>
+                <button class="launchBtn" onclick="window.location.href='#/tictactoe'">Launch Game</button>
+            </div>
+        </div>
+
+        <!-- closing bracket for Right -->
+    </div>
+
+    <!-- Bottom, ie. game window -->
+    <div id="bottom"><div ng-view></div></div>
 
     </div>
     <!-- Footer -->
     <div class="footer">
     </div>
+    <script src="js/main.js"></script>
     <script src="js/angular-mod.js"></script>
 </body>
 </html>

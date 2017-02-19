@@ -6,7 +6,6 @@
     background-image: url("../img/bgcover.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    margin: auto;
     padding-top: 70px;
 }
 .card {

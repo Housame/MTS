@@ -4,8 +4,8 @@
 var app = angular.module("myApp", ["ngRoute"]);
 app.config(function($routeProvider) {
     $routeProvider
-        .when("/", {
-            templateUrl : "ng-parts/main.html"
+        .when("/tictactoe", {
+            templateUrl : "ng-parts/tictactoe.html"
         })
         .when("/sten", {
             templateUrl : "ng-parts/RPS-game.html"
