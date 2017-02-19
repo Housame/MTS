@@ -1,31 +1,32 @@
 body
 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: darkred;
+    background-color:black;
 }
 #container
 {
     width: 100%;
     height: 100%;
+    background-image: url('../img/game-window-background.jpg');
 }
 #top-bar
 {
     margin-top: 60px;
     height: 50px;
     width: 100%;
-    background-color: yellow;
+    background-color: black;
+    border-bottom: 1px solid white;
 }
 #mainBtn
 {
-    margin: 5px 0px 5px 5px;
-    padding: 10px 30px;
+    margin: 5px 5px 0px 5px;
+    padding: 5px 30px;
 }
 #left-bar
 {
     width: 15%;
     height: 100%;
     float: left;
-    background-color: darkred;
     margin: 0 auto;
     text-align: center;
 }
@@ -33,24 +34,24 @@ body
 {
     height: 200px;
     width: 200px;
-    background-color: green;
     padding: 0px;
     margin-top: 10px;
-    border-radius: 3px;
+    margin-bottom: 10px;
+    border-radius: 5%;
+    border: 1px solid white;
 }
 #right-bar
 {
     float: left;
     width: 100%;
     height: 100%;
-    background-color: darkslateblue;
+    background-image: url('../img/games-background.jpg');
 }
 #bottom
 {
     margin: 10px auto;
     width: 100px;
-    height: 650px;
-    background-color: pink;
+    height: 800px;
 }
 .game-row
 {
@@ -66,19 +67,18 @@ body
     text-align: center;
     color: black;
     padding-bottom: 20px;
-    border-bottom: 1px solid lightgrey;
 }
 .game-row img
 {
     height: 225px;
     width: 225px;
     border-radius: 5%;
-    border: 1px solid white;
+    border: 1px solid black;
 }
 .game-row h1, p
 {
+    color: white;
     padding-top: 10px;
-    margin: auto 10px;
     text-align: left;
 }
 .game-row h1

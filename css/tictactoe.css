@@ -10,7 +10,7 @@
 #tictactoe h1
 {
     margin: 0;
-    color: darkred;
+    color: white;
     padding-top: 50px;
     padding-bottom: 25px;
 }
@@ -46,18 +46,18 @@
 {
     font-weight: bold;
     font-size: 20px;
-    color: darkred;
+    color: white;
 }
 #resultMsg
 {
     font-weight: bold;
     font-size: 30px;
-    color: green;
+    color: lightgreen;
 }
 .newGameBtn
 {
     padding: 20px 50px;
-    background-color: lightcoral;
+    background-color: darkred;
     color: white;
     font-weight: bold;
 }
