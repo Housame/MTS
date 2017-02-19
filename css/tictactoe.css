@@ -1,8 +1,28 @@
-body
+#tictactoe
 {
+    align-content: center;
+    text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 500px;
+    width: 500px;
+    margin: auto;
+}
+#tictactoe h1
+{
     margin: 0;
-    padding: 0;
+    color: darkred;
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+#options
+{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+#grid, #log
+{
+    margin: 0 auto;
+    display: inline-block;
 }
 .tile
 {
@@ -33,4 +53,11 @@ body
     font-weight: bold;
     font-size: 30px;
     color: green;
+}
+.newGameBtn
+{
+    padding: 20px 50px;
+    background-color: lightcoral;
+    color: white;
+    font-weight: bold;
 }

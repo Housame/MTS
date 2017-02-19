@@ -13,7 +13,7 @@ $(document).ready(function () {
 
     $('#grid button').click(function () {
         $(this).fadeOut('fast', function () {
-            $(this).css("background-image", "url(../img/tictactoe/usa.jpg)").fadeIn();
+            $(this).css("background-image", "url(img/tictactoe/usa.jpg)").fadeIn();
         });
         $(this).addClass('occupiedTile');
         $(this).addClass('playerTile');
@@ -41,7 +41,7 @@ $(document).ready(function () {
             if (!($(specificTile).hasClass('occupiedTile')))
             {
                 $(specificTile).fadeOut('fast', function() {
-                    $(specificTile).css("background-image", "url(../img/tictactoe/china.jpg)").fadeIn();
+                    $(specificTile).css("background-image", "url(img/tictactoe/china.jpg)").fadeIn();
                 });
                 $(specificTile).addClass('occupiedTile');
                 $(specificTile).addClass('cpuTile');
@@ -112,6 +112,7 @@ $(document).ready(function () {
             var message = document.getElementById('resultMsg');
             message.innerHTML = "";
             winner = false;
+            $(this).css('background-image', "url(img/tictactoe/earth.png)");
         });
     });
 
