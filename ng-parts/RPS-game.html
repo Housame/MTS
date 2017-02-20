@@ -1,6 +1,7 @@
 <section>
 
     <div id="RPSField" class="stenDesign">
+
         <div> <button  ng-click="qty = 1">Start Game</button><br>
             <h2>Choose Paper, Rock or Scissor by clicking it!</h2></div>
         <div id="gameBoxx" class="game-box" class="block-border fade" ng-show="qty > 0">
@@ -10,7 +11,24 @@
                 <area shape="circle" coords="118,223,74" href="#" alt="Scissor1"  onclick="StartGame('Scissor');return false;" >
                 <area shape="circle" coords="222,123,74" href="#" alt="Paper1"  onclick="StartGame('Paper');return false;">
             </map> </div>
+    <div class="RSPResult">
+        <table>
+        <tr>
+            <th id="you"><h3>You</h3></th>
+            <th id="aI"><h3>CPU</h3></th>
+        </tr>
+        <tr>
+            <td id="playerChoice"></td>
+            <td id="cpuChoice"></td>
+        </tr>
+        <tr>
+            <td id="playerResult"></td>
+            <td id="cpuResult"></td>
+        </tr>
+    </table>
     </div>
+    </div>
+    <div> <button onclick='Reset()'>Reset Game</button></div>
     <script>
         var app = angular.module('myApp', ['ngAnimate']);
 

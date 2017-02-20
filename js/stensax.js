@@ -1,6 +1,11 @@
 /**
  * Created by Housam on 2017-02-15.
  */
+var player = 0;
+var CPU = 0;
+var winnerIMG="img/winner.jpg";
+var loserIMG="img/loser.jpg";
+var noneIMG="img/tryagain.jpg";
 function StartGame(choice){
     document.getElementById("gameBoxx").innerHTML = "";
     Game(choice);
@@ -13,39 +18,90 @@ function Game(choice){
     else if (computerChoice<=0.67)
         computerChoice="Scissor";
     else computerChoice="Paper";
+    compare(userChoice,computerChoice);
+    UchoiceIMGURL(userChoice);
+    CPUchoiceIMGURL(computerChoice);
 
-    var firstString = "You Choice: "+userChoice;
-    var secondString="CPU Choice: "+computerChoice;
-    var result = compare(userChoice,computerChoice);
+    ResultTableFill(player,CPU);
+    player=0;
+    CPU=0;
 
-    var x = document.createElement("p");
-    gameBoxx.appendChild(x);
+}
 
-    x.innerHTML = firstString+"<br>"+secondString+"<br>"+result+"<br> <div> <button onclick='Reset()'>Reset Game</button>";
+function UchoiceIMGURL (userChoice){
+    var playerChoiceTD = document.getElementById("playerChoice");
+    if (userChoice.toUpperCase()==="ROCK")
+    {playerChoiceTD.innerHTML="<img src='img/rock.jpg'>"}
+    else if (userChoice.toUpperCase()==="PAPER")
+    { playerChoiceTD.innerHTML="<img src='img/paper.jpg'>"}
+    else playerChoiceTD.innerHTML="<img src='img/scissor.jpg'>";
 
+}
+function CPUchoiceIMGURL (computerChoice){
+    var cpuChoiceTD = document.getElementById("cpuChoice");
+    if (computerChoice.toUpperCase()==="ROCK")
+    {cpuChoiceTD.innerHTML="<img src='img/rock.jpg'>"}
+    else if (computerChoice.toUpperCase()==="PAPER")
+    { cpuChoiceTD.innerHTML="<img src='img/paper.jpg'>"}
+    else cpuChoiceTD.innerHTML="<img src='img/scissor.jpg'>";
+}
+function ResultTableFill(player,CPU){
+    var playerTD = document.getElementById("playerResult");
+    var cpuTD = document.getElementById("cpuResult");
+    if(player > 0)
+    {
+        playerTD.innerHTML="<img src='"+winnerIMG+"')</img>";
+        cpuTD.innerHTML="<img src='"+loserIMG+"')</img>";
+    }
+    else if (CPU > 0)
+    {
+        cpuTD.innerHTML="<img src='"+winnerIMG+"')</img>";
+        playerTD.innerHTML="<img src='"+loserIMG+"')</img>";
+    }
+    else
+    {
+        playerTD.innerHTML="<img src='"+noneIMG+"')</img>";
+        cpuTD.innerHTML="<img src='"+noneIMG+"')</img>";
+    }
 }
 function compare(choice1,choice2) {
     choice1=choice1.toUpperCase();
     choice2=choice2.toUpperCase();
     if(choice1==choice2)
-        return "withdraw!";
+    {player=0;
+    CPU= 0;}
     else if (choice1=="PAPER")
     {
         if(choice2=="ROCK")
-            return "You WIN!";
-        else return"You LOSE, CPU WIN!"
+        {
+            player++;
+            }
+        else
+            {
+                CPU++;
+           }
     }
     else if (choice1=="ROCK")
     {
         if(choice2=="SCISSOR")
-            return "You WIN!";
-        else return"You LOSE, CPU WIN!"
+        {
+            player++;
+            }
+        else
+        {
+            CPU++;
+            }
     }
     else if (choice1=="SCISSOR")
     {
         if(choice2=="PAPER")
-            return "Du vinner!";
-        else return"Du förlorar, CPU vinner!"
+        {
+            player++;
+            }
+        else
+        {
+            CPU++;
+            }
     }
 }
 
