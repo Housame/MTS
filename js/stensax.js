@@ -18,6 +18,7 @@ function Game(choice){
     else if (computerChoice<=0.67)
         computerChoice="Scissor";
     else computerChoice="Paper";
+    FillTH();
     compare(userChoice,computerChoice);
     UchoiceIMGURL(userChoice);
     CPUchoiceIMGURL(computerChoice);
@@ -27,7 +28,10 @@ function Game(choice){
     CPU=0;
 
 }
-
+function FillTH(){
+    document.getElementById("you").innerHTML = "<h3>You</h3>";
+    document.getElementById("aI").innerHTML = "<h3>CPU</h3>";
+}
 function UchoiceIMGURL (userChoice){
     var playerChoiceTD = document.getElementById("playerChoice");
     if (userChoice.toUpperCase()==="ROCK")
