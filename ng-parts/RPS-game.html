@@ -4,13 +4,17 @@
 
         <div> <button type="button" class="btn btn-primary"  ng-click="qty = 1">Start Game</button><br>
             <h2>Choose Paper, Rock or Scissor by clicking it!</h2></div>
+
+        <!--Angular method that show the picture map-->
         <div id="gameBoxx" class="game-box" class="block-border fade" ng-show="qty > 0">
-            <img src ="img/RPS-map.png" width="300" height="300" alt="RPSMap" usemap="#RPS-map">
-            <map name="RPS-map">
+            <img src ="img/rsp/RPS-map.png" width="300" height="300" alt="RPSMap" usemap="#RPS-map">
+            <map name="RPS-map"> <!--image map with three shapes to choose-->
                 <area shape="circle" coords="76,80,67" href="#" alt="Rock1" onclick="StartGame('Rock');return false;" >
                 <area shape="circle" coords="118,223,74" href="#" alt="Scissor1"  onclick="StartGame('Scissor');return false;" >
                 <area shape="circle" coords="222,123,74" href="#" alt="Paper1"  onclick="StartGame('Paper');return false;">
             </map> </div>
+
+        <!--Table that shows results -->
     <div class="RSPResult">
         <table>
         <tr>
