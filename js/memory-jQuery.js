@@ -18,7 +18,7 @@ $(document).ready(function() {
         var cardid = $(this).attr("id");
         var cardclass = $(this).attr("class");
         var cardNumber = findCardInArray(cardid);
-        $(this).css('background-image', 'url("img/'+ cards[cardNumber].motif+'")');
+        $(this).css('background-image', 'url("img/memory-images/'+ cards[cardNumber].motif+'")');
         switch(clicks){
             case 1: card1 = cardid;
                 card1Class = cardclass;

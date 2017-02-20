@@ -108,7 +108,7 @@ $(document).ready(function () {
         else if ($('#tile3').hasClass('cpuTile') && $('#tile5').hasClass('cpuTile') && $('#tile7').hasClass('cpuTile'))
             declareWinner('CPU won!');
 
-        if (gameTurn > 9)
+        if (gameTurn > 9 && winner == false)
             declareWinner('Game was a draw.');
     }
 
