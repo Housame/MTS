@@ -1,9 +1,19 @@
-body
-{
-    margin: 0;
-    padding: 0;
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
 
+body {
+    position: relative;
+    padding-bottom: 6rem;
+    min-height: 100%;
+    margin: 0;
+}
 video.video-container{
     position: fixed;
     right: 0; bottom: 0;
@@ -155,12 +165,53 @@ video.video-container{
     margin-bottom: 1%;
 }
 .slogan {
+    z-index: 1;
     height: 100%;
     margin-top: 15%;
     text-align: center;
+    background-color: black;
     font-size: 50px;
-    color: black;
-    background-color: #a3f8ff;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3),rgba(0,0,0,0.2), rgba(0,0,0,0.0));
+    left:0;
+    right: 0;
+    top: 0;
+    opacity: 0.6;
+}
+.slogan2 {
+    font-family: Algerian,  Times, "Times New Roman", Serif ;
+    text-align: center;
+    z-index: 2;
+    margin: 5%;
+    font-weight: bold;
+    color: white;
+}
+/* footer styling*/
+.footer{
+    position: absolute;
+    margin-bottom: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #efefef;
+    flex-grow:5;
+    text-align: left;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 20px;
+}
+.footer span{text-align: center}
+.first-ft-div{display:inline-block;
+    width: 30%;
+    float: left;}
+.second-ft-div{display:inline-block;
+    width: 30%;
+    padding-left: 250px}
+.third-ft-div{display:inline-block;
+    width: 30%;
+    padding-left: 100px;
+    float: right;}
+.copyrights{
+    margin-left: 45%;
 }
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
