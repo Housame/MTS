@@ -27,6 +27,7 @@
     -webkit-animation-duration: 8s; /* Safari 4.0 - 8.0 */
     animation-name: example;
     animation-duration: 8s;
+    animation-iteration-count: infinite;
 }
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes example {
