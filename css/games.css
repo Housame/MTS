@@ -9,6 +9,86 @@ body
     height: 100%;
     background-image: url('../img/game-window-background.jpg');
 }
+.header{
+    position: fixed;
+    background-color: transparent;
+    z-index: 2;
+    width: 100%;
+    left:0;
+    right: 0;
+    top: 0;
+    margin-bottom: 35px;
+    vertical-align: top;
+}
+.filter {
+    height: 70px;
+    z-index: 1;
+    position: fixed;
+    bbackground: linear-gradient(to bottom, rgba(0,0,0,0.3),rgba(0,0,0,0.2), rgba(0,0,0,0.0));
+    background-color: black;
+    width: 100%;
+    left:0;
+    right: 0;
+    top: 0;
+    opacity: 0.1;
+    padding: 30px;
+}
+
+
+
+#headerTable {
+    width:100%;
+}
+#headerTable td{
+    vertical-align: top;
+}
+#headerTable img{
+    margin-left: 10px;
+    height: 70px;
+    width: 250px;
+    cclip: rect(40px, 30px, 150px, 0px);
+    mmargin: -90px -120px 200px -10px;
+    object-fit: cover;
+}
+.menu-icon{
+    padding: 5px 0;
+    float:right;
+    width:100px;
+}
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    right: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
 #top-bar
 {
     margin-top: 70px;

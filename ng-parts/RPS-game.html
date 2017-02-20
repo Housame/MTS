@@ -2,7 +2,7 @@
 
     <div id="RPSField" class="stenDesign">
 
-        <div> <button  ng-click="qty = 1">Start Game</button><br>
+        <div> <button type="button" class="btn btn-primary"  ng-click="qty = 1">Start Game</button><br>
             <h2>Choose Paper, Rock or Scissor by clicking it!</h2></div>
         <div id="gameBoxx" class="game-box" class="block-border fade" ng-show="qty > 0">
             <img src ="img/RPS-map.png" width="300" height="300" alt="RPSMap" usemap="#RPS-map">
@@ -28,7 +28,7 @@
     </table>
     </div>
     </div>
-    <div> <button onclick='Reset()'>Reset Game</button></div>
+    <div> <button type="button" class="btn btn-danger" onclick='Reset()'>Reset Game</button></div>
     <script>
         var app = angular.module('myApp', ['ngAnimate']);
 
