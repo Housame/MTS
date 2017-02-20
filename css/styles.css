@@ -14,6 +14,7 @@ body {
     min-height: 100%;
     margin: 0;
 }
+
 video.video-container{
     position: fixed;
     right: 0; bottom: 0;
